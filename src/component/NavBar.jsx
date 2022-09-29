@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import Logo from '../asset/Logo.png'
+import Logo from '../asset/Logo.png'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
@@ -11,10 +11,10 @@ const NavBar = () => {
 
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-            {/* <div>
-           
+            <div>
+                {/* เดี๋ยวบรรทัดนี้ต้องมาเปลี่ยนLogo */}
                 <img src={Logo} alt="Logo Image" style={{ width: '50px' }} />
-            </div> */}
+            </div>
 
             {/* menu */}
             {/* ตัวเลือนใช้ react-scoll */}
@@ -60,7 +60,7 @@ const NavBar = () => {
             </ul>
 
             {/* social Icon */}
-            <div className='hidden :flex fixed flex-col top-[35%] left-0'>
+            <div className='hidden:md:flex fixed flex-col top-[35%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
                         <a className='flex justify-between items-center w-full text-gray-300'
